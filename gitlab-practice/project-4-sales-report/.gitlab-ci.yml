@@ -1,0 +1,32 @@
+image: python:3.12-slim
+stages:
+  - build
+  - test
+  - deploy
+before_script:
+  - python -m pip install --no-index -r requirements.txt
+build_job:
+  stage: build
+  script:
+    - python tools.py build
+  artifacts:
+    paths:
+      - dist/application.zip
+    expire_in: 1 week
+test_job:
+  stage: test
+  dependencies:
+    - build_job
+  script:
+    - python -m unittest discover -s tests -v
+    - python tools.py smoke dist/application.zip
+deploy_job:
+  stage: deploy
+  dependencies:
+    - build_job
+  script:
+    - python tools.py deploy
+  artifacts:
+    paths:
+      - deploy/
+    expire_in: 1 week

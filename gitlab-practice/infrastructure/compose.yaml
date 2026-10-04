@@ -1,0 +1,38 @@
+name: gitlab-practice
+services:
+  gitlab:
+    image: gitlab/gitlab-ce:latest
+    hostname: gitlab.local
+    restart: unless-stopped
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'http://gitlab.local:8080'
+        gitlab_rails['gitlab_shell_ssh_port'] = 2222
+    ports:
+      - '8080:8080'
+      - '2222:22'
+    volumes:
+      - gitlab-config:/etc/gitlab
+      - gitlab-logs:/var/log/gitlab
+      - gitlab-data:/var/opt/gitlab
+    shm_size: '256m'
+    networks:
+      lab:
+        aliases:
+          - gitlab.local
+  runner:
+    image: gitlab/gitlab-runner:latest
+    restart: unless-stopped
+    volumes:
+      - runner-config:/etc/gitlab-runner
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - lab
+volumes:
+  gitlab-config:
+  gitlab-logs:
+  gitlab-data:
+  runner-config:
+networks:
+  lab:
+    name: gitlab-practice-net
