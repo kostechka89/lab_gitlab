@@ -22,3 +22,12 @@ GitLab pipeline и Runner Online пока не подтверждены: вып�
 Этот GitHub-репозиторий хранит комплект для скачивания. Для сдачи работы создайте **четыре отдельных GitLab-репозитория** и загрузите в каждый только содержимое соответствующей папки project-*. Не загружайте весь комплект в один студенческий репозиторий.
 
 Для скачивания в GitHub нажмите **Code → Download ZIP**, распакуйте архив и откройте `gitlab-practice/GUIDE.md`.
+
+## Отдельные инструкции участников
+
+Внешние API и Telegram-токены для выбранных проектов не требуются.
+
+- [Участник 1: Todo REST API](gitlab-practice/project-1-todo-api/PARTICIPANT-GUIDE.md)
+- [Участник 2: Student Planner](gitlab-practice/project-2-student-planner/PARTICIPANT-GUIDE.md)
+- [Участник 3: Text Analyzer CLI](gitlab-practice/project-3-text-analyzer/PARTICIPANT-GUIDE.md)
+- [Участник 4: CSV Sales Report](gitlab-practice/project-4-sales-report/PARTICIPANT-GUIDE.md)
