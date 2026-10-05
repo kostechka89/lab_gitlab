@@ -1,0 +1,6 @@
+todo-api: SHA 8ee36108ec50035aa721b39208f0f258581efd8f; pipeline #6; 3 jobs success; 4 tests; smoke PASS; artifacts SHA256 PASS; Keep confirmed; clean Git status
+student-planner: SHA 7cf00e2ba266673fad6524db49ddd7b8f1d6cd49; pipeline #7; 3 jobs success; 3 tests; smoke PASS; artifacts SHA256 PASS; Keep confirmed; clean Git status
+text-analyzer: SHA b7069b989a0fee4e22608a2a1ca10e265d06af73; pipeline #8; 3 jobs success; 4 tests; smoke PASS; artifacts SHA256 PASS; Keep confirmed; clean Git status
+sales-report: SHA 1356de524c2f2e897393b4b33c6d1c405a96c1bb; pipeline #9; 3 jobs success; 4 tests; smoke PASS; artifacts SHA256 PASS; Keep confirmed; clean Git status
+Five report HTML files parsed; title fields present; 38 group and 11 individual screenshot placeholders; headings and UTF-8 verified
+Submission files checked for secret patterns and prohibited directories; source snapshots contain no preparation materials

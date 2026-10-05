@@ -1,33 +1,36 @@
-# Практическая работа №2: GitLab CI/CD
+# Практическая работа №2 — GitLab CI/CD
 
-Готовый комплект из четырёх разных индивидуальных проектов.
+Четыре индивидуальных приложения на общей локальной установке GitLab и Runner.
 
-**Начните с [пошаговой инструкции](gitlab-practice/GUIDE.md).**
+## Материалы команды
 
-| Проект | Назначение |
-|---|---|
-| [Todo REST API](gitlab-practice/project-1-todo-api/) | HTTP API задач |
-| [Student Planner](gitlab-practice/project-2-student-planner/) | Веб-планировщик учебных заданий |
-| [Text Analyzer CLI](gitlab-practice/project-3-text-analyzer/) | Консольный анализ текста |
-| [CSV Sales Report](gitlab-practice/project-4-sales-report/) | Пакетное создание HTML-отчёта из CSV |
+| Участник | Проект | Что открыть |
+|---|---|---|
+| Костя | Todo REST API и общая инфраструктура | [Материал Кости](team/01-KOSTYA.md) |
+| Дима | Student Planner | [Материал Димы](team/02-DIMA.md) |
+| Лариса | CSV Sales Report | [Материал Ларисы](team/03-LARISA.md) |
+| Настя | Text Analyzer CLI | [Материал Насти](team/04-NASTYA.md) |
 
-В каждой папке: исходный код, README, зависимости, тесты, сборка, учебный deploy и собственный `.gitlab-ci.yml` с этапами build → test → deploy.
+Начните со своего материала, затем посмотрите [порядок защиты](team/DEFENSE-ORDER.md).
 
-- [Docker Compose для GitLab и Runner](gitlab-practice/infrastructure/compose.yaml)
-- [Фактические локальные проверки](gitlab-practice/LOCAL-VERIFICATION.txt)
+## Отчёт и запуск
 
-Локально прошли 15 автоматических тестов, запуск приложений, сборка и учебный deploy. Проверено, что намеренные ошибки логики вызывают падение тестов.
-GitLab pipeline и Runner Online пока не подтверждены: выполните инструкцию на своём компьютере.
+- [Word-отчёт с местами для скриншотов](reports/Отчёт-ПР2-GitLab-CICD.docx)
+- [Что проверить и заполнить в отчёте](reports/REPORT-REVIEW.md)
+- [Повторный запуск на Windows](WINDOWS-RUNBOOK.md)
+- [Проверка сохранённых доказательств](CHECKS.md)
+- [Архив для скачивания](downloads/gitlab-practice-submission.zip)
 
-Этот GitHub-репозиторий хранит комплект для скачивания. Для сдачи работы создайте **четыре отдельных GitLab-репозитория** и загрузите в каждый только содержимое соответствующей папки project-*. Не загружайте весь комплект в один студенческий репозиторий.
+## Исходники
 
-Для скачивания в GitHub нажмите **Code → Download ZIP**, распакуйте архив и откройте `gitlab-practice/GUIDE.md`.
+- [Todo API](gitlab-practice/project-1-todo-api/)
+- [Student Planner](gitlab-practice/project-2-student-planner/)
+- [Sales Report](gitlab-practice/project-4-sales-report/)
+- [Text Analyzer](gitlab-practice/project-3-text-analyzer/)
+- [Docker Compose](gitlab-practice/infrastructure/compose.yaml)
 
-## Отдельные инструкции участников
+В GitLab приложения находятся в четырёх отдельных репозиториях группы devopsrabota2. Этот GitHub хранит общий комплект для скачивания и защиты, а не заменяет индивидуальные GitLab-проекты.
 
-Внешние API и Telegram-токены для выбранных проектов не требуются.
+Сохранённые логи подтверждают pipeline #6, #7, #8 и #9. Адрес gitlab.local работает на компьютере с установленным сервером и не открывается у других автоматически. Deploy — подготовка проверенного пакета файлов, без постоянного production-сервиса.
 
-- [Участник 1: Todo REST API](gitlab-practice/project-1-todo-api/PARTICIPANT-GUIDE.md)
-- [Участник 2: Student Planner](gitlab-practice/project-2-student-planner/PARTICIPANT-GUIDE.md)
-- [Участник 3: Text Analyzer CLI](gitlab-practice/project-3-text-analyzer/PARTICIPANT-GUIDE.md)
-- [Участник 4: CSV Sales Report](gitlab-practice/project-4-sales-report/PARTICIPANT-GUIDE.md)
+Костя настраивал общую среду и загружал проекты. Индивидуальные проекты распределены между участниками; описание личного вклада каждый заполняет по фактически выполненным действиям.

@@ -1,0 +1,190 @@
+{
+  "version": "19.4.1",
+  "checked_at": "2026-10-05T01:32:41Z",
+  "runners": [
+    {
+      "id": 1,
+      "status": "online",
+      "active": true,
+      "run_untagged": true
+    }
+  ],
+  "projects": [
+    {
+      "id": 4,
+      "path": "devopsrabota2/sales-report",
+      "url": "http://gitlab.local:8080/devopsrabota2/sales-report",
+      "visibility": 0,
+      "shared_runners": true,
+      "pipeline": {
+        "id": 9,
+        "url": "http://gitlab.local:8080/devopsrabota2/sales-report/-/pipelines/9",
+        "status": "success",
+        "sha": "1356de524c2f2e897393b4b33c6d1c405a96c1bb",
+        "jobs": [
+          {
+            "id": 25,
+            "name": "build_job",
+            "stage": "build",
+            "status": "success",
+            "artifact": {
+              "size": 3463,
+              "expires_at": null,
+              "kept": true
+            }
+          },
+          {
+            "id": 26,
+            "name": "test_job",
+            "stage": "test",
+            "status": "success",
+            "artifact": null
+          },
+          {
+            "id": 27,
+            "name": "deploy_job",
+            "stage": "deploy",
+            "status": "success",
+            "artifact": {
+              "size": 4448,
+              "expires_at": null,
+              "kept": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "path": "devopsrabota2/todo-api",
+      "url": "http://gitlab.local:8080/devopsrabota2/todo-api",
+      "visibility": 0,
+      "shared_runners": true,
+      "pipeline": {
+        "id": 6,
+        "url": "http://gitlab.local:8080/devopsrabota2/todo-api/-/pipelines/6",
+        "status": "success",
+        "sha": "8ee36108ec50035aa721b39208f0f258581efd8f",
+        "jobs": [
+          {
+            "id": 17,
+            "name": "test_job",
+            "stage": "test",
+            "status": "success",
+            "artifact": null
+          },
+          {
+            "id": 16,
+            "name": "build_job",
+            "stage": "build",
+            "status": "success",
+            "artifact": {
+              "size": 3598,
+              "expires_at": null,
+              "kept": true
+            }
+          },
+          {
+            "id": 18,
+            "name": "deploy_job",
+            "stage": "deploy",
+            "status": "success",
+            "artifact": {
+              "size": 4369,
+              "expires_at": null,
+              "kept": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "path": "devopsrabota2/student-planner",
+      "url": "http://gitlab.local:8080/devopsrabota2/student-planner",
+      "visibility": 0,
+      "shared_runners": true,
+      "pipeline": {
+        "id": 7,
+        "url": "http://gitlab.local:8080/devopsrabota2/student-planner/-/pipelines/7",
+        "status": "success",
+        "sha": "7cf00e2ba266673fad6524db49ddd7b8f1d6cd49",
+        "jobs": [
+          {
+            "id": 20,
+            "name": "test_job",
+            "stage": "test",
+            "status": "success",
+            "artifact": null
+          },
+          {
+            "id": 19,
+            "name": "build_job",
+            "stage": "build",
+            "status": "success",
+            "artifact": {
+              "size": 3646,
+              "expires_at": null,
+              "kept": true
+            }
+          },
+          {
+            "id": 21,
+            "name": "deploy_job",
+            "stage": "deploy",
+            "status": "success",
+            "artifact": {
+              "size": 4388,
+              "expires_at": null,
+              "kept": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "path": "devopsrabota2/text-analyzer",
+      "url": "http://gitlab.local:8080/devopsrabota2/text-analyzer",
+      "visibility": 0,
+      "shared_runners": true,
+      "pipeline": {
+        "id": 8,
+        "url": "http://gitlab.local:8080/devopsrabota2/text-analyzer/-/pipelines/8",
+        "status": "success",
+        "sha": "b7069b989a0fee4e22608a2a1ca10e265d06af73",
+        "jobs": [
+          {
+            "id": 22,
+            "name": "build_job",
+            "stage": "build",
+            "status": "success",
+            "artifact": {
+              "size": 3100,
+              "expires_at": null,
+              "kept": true
+            }
+          },
+          {
+            "id": 24,
+            "name": "deploy_job",
+            "stage": "deploy",
+            "status": "success",
+            "artifact": {
+              "size": 4086,
+              "expires_at": null,
+              "kept": true
+            }
+          },
+          {
+            "id": 23,
+            "name": "test_job",
+            "stage": "test",
+            "status": "success",
+            "artifact": null
+          }
+        ]
+      }
+    }
+  ]
+}

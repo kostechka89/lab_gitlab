@@ -1,0 +1,46 @@
+2026-10-05T01:31:06.306910Z 00O [0KRunning with gitlab-runner 19.4.1 (3c39fceb)[0;m
+2026-10-05T01:31:06.306922Z 00O [0K  on devops-docker rf8f0q9Qr, system ID: r_o0njxSloCRPv[0;m
+2026-10-05T01:31:06.306924Z 00O [0K  UUID: 01a1098d-d044-751a-afc8-3d1026d7a058[0;m
+2026-10-05T01:31:06.306943Z 00O section_start:1791163866:prepare_executor[0K
+2026-10-05T01:31:06.306945Z 00O+[0K[36;1mPreparing the "docker" executor[0;m[0;m
+2026-10-05T01:31:06.322395Z 00O [0KUsing Docker executor with image python:3.12-slim ...[0;m
+2026-10-05T01:31:07.010622Z 00O [0KUsing effective pull policy of [always] for container python:3.12-slim[0;m
+2026-10-05T01:31:07.038117Z 00O [0KPulling docker image python:3.12-slim ...[0;m
+2026-10-05T01:31:08.323473Z 00O [0KUsing docker image sha256:02108f5d322dd89f1c9e552442c25acb0543dfdbc455693a5599624f20d9155d for python:3.12-slim with digest python@sha256:02108f5d322dd89f1c9e552442c25acb0543dfdbc455693a5599624f20d9155d ...[0;m
+2026-10-05T01:31:08.323484Z 00O section_end:1791163868:prepare_executor[0K
+2026-10-05T01:31:08.323584Z 00O+section_start:1791163868:prepare_script[0K
+2026-10-05T01:31:08.323587Z 00O+[0K[36;1mPreparing environment[0;m[0;m
+2026-10-05T01:31:08.335597Z 00O [0KUsing effective pull policy of [always] for container sha256:25db4eaaff9ff231b010eca4e189065b821b637a443897e14e0271a9faf370bf[0;m
+2026-10-05T01:31:08.536584Z 01O Running on runner-rf8f0q9qr-project-2-concurrent-0 via 2f8eed54d6df...
+2026-10-05T01:31:08.678307Z 00O section_end:1791163868:prepare_script[0K
+2026-10-05T01:31:08.678586Z 00O+section_start:1791163868:get_sources[0K
+2026-10-05T01:31:08.678594Z 00O+[0K[36;1mGetting source from Git repository[0;m[0;m
+2026-10-05T01:31:08.849518Z 01O [32;1mGitaly correlation ID: 01M44TZ715GP43ZE4GZM9N4YV6[0;m
+2026-10-05T01:31:08.853650Z 01O [32;1mFetching changes with git depth set to 20...[0;m
+2026-10-05T01:31:08.855707Z 01O Reinitialized existing Git repository in /builds/devopsrabota2/student-planner/.git/
+2026-10-05T01:31:08.857932Z 01O [32;1mCreated fresh repository.[0;m
+2026-10-05T01:31:09.036383Z 01O [32;1mChecking out 7cf00e2b as detached HEAD (ref is main)...[0;m
+2026-10-05T01:31:09.039503Z 01O Removing deploy/
+2026-10-05T01:31:09.039509Z 01O Removing dist/
+2026-10-05T01:31:09.069873Z 01O 
+2026-10-05T01:31:09.069880Z 01O [32;1mSkipping Git submodules setup[0;m
+2026-10-05T01:31:09.203845Z 00O section_end:1791163869:get_sources[0K
+2026-10-05T01:31:09.204472Z 00O+section_start:1791163869:step_script[0K
+2026-10-05T01:31:09.204478Z 00O+[0K[36;1mExecuting "step_script" stage of the job script[0;m[0;m
+2026-10-05T01:31:09.204487Z 00O [0KUsing effective pull policy of [always] for container python:3.12-slim[0;m
+2026-10-05T01:31:09.231397Z 00O [0KUsing docker image sha256:02108f5d322dd89f1c9e552442c25acb0543dfdbc455693a5599624f20d9155d for python:3.12-slim with digest python@sha256:02108f5d322dd89f1c9e552442c25acb0543dfdbc455693a5599624f20d9155d ...[0;m
+2026-10-05T01:31:09.457495Z 01O [32;1m$ python -m pip install --no-index -r requirements.txt[0;m
+2026-10-05T01:31:10.242074Z 01E WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+2026-10-05T01:31:10.271252Z 01O [32;1m$ python tools.py build[0;m
+2026-10-05T01:31:10.309051Z 01O Build: PASS application.zip
+2026-10-05T01:31:10.456871Z 00O section_end:1791163870:step_script[0K
+2026-10-05T01:31:10.457565Z 00O+section_start:1791163870:upload_artifacts_on_success[0K
+2026-10-05T01:31:10.457570Z 00O+[0K[36;1mUploading artifacts for successful job[0;m[0;m
+2026-10-05T01:31:10.641009Z 01O [32;1mUploading artifacts...[0;m
+2026-10-05T01:31:10.671076Z 01E dist/application.zip: found 1 matching artifact files and directories[0;m 
+2026-10-05T01:31:10.790104Z 01E Uploading artifacts as "archive" to coordinator... 201 Created[0;m  correlation_id[0;m=01M44TZBEF8EHGSKFX9TAFS5ZP id[0;m=19 status[0;m=201 token[0;m=eyJraWQiO
+2026-10-05T01:31:10.911970Z 00O section_end:1791163870:upload_artifacts_on_success[0K
+2026-10-05T01:31:10.912225Z 00O+section_start:1791163870:cleanup_file_variables[0K
+2026-10-05T01:31:10.912229Z 00O+[0K[36;1mCleaning up project directory and file based variables[0;m[0;m
+2026-10-05T01:31:11.233467Z 00O section_end:1791163871:cleanup_file_variables[0K
+2026-10-05T01:31:11.276324Z 00O [32;1mJob succeeded[0;m

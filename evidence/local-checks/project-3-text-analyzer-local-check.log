@@ -1,0 +1,14 @@
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+test_counts (test_app.Tests.test_counts) ... ok
+test_empty (test_app.Tests.test_empty) ... ok
+test_punctuation (test_app.Tests.test_punctuation) ... ok
+test_unicode (test_app.Tests.test_unicode) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+Build: PASS application.zip
+Application smoke: PASS
+Application smoke: PASS
+Educational deploy: PASS

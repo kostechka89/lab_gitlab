@@ -1,0 +1,54 @@
+2026-10-05T01:31:17.003850Z 00O [0KRunning with gitlab-runner 19.4.1 (3c39fceb)[0;m
+2026-10-05T01:31:17.003859Z 00O [0K  on devops-docker rf8f0q9Qr, system ID: r_o0njxSloCRPv[0;m
+2026-10-05T01:31:17.003861Z 00O [0K  UUID: 01a1098d-d044-751a-afc8-3d1026d7a058[0;m
+2026-10-05T01:31:17.003881Z 00O section_start:1791163877:prepare_executor[0K
+2026-10-05T01:31:17.003883Z 00O+[0K[36;1mPreparing the "docker" executor[0;m[0;m
+2026-10-05T01:31:17.023531Z 00O [0KUsing Docker executor with image python:3.12-slim ...[0;m
+2026-10-05T01:31:17.721624Z 00O [0KUsing effective pull policy of [always] for container python:3.12-slim[0;m
+2026-10-05T01:31:17.752485Z 00O [0KPulling docker image python:3.12-slim ...[0;m
+2026-10-05T01:31:18.989693Z 00O [0KUsing docker image sha256:02108f5d322dd89f1c9e552442c25acb0543dfdbc455693a5599624f20d9155d for python:3.12-slim with digest python@sha256:02108f5d322dd89f1c9e552442c25acb0543dfdbc455693a5599624f20d9155d ...[0;m
+2026-10-05T01:31:18.989709Z 00O section_end:1791163878:prepare_executor[0K
+2026-10-05T01:31:18.989822Z 00O+section_start:1791163878:prepare_script[0K
+2026-10-05T01:31:18.989827Z 00O+[0K[36;1mPreparing environment[0;m[0;m
+2026-10-05T01:31:19.005540Z 00O [0KUsing effective pull policy of [always] for container sha256:25db4eaaff9ff231b010eca4e189065b821b637a443897e14e0271a9faf370bf[0;m
+2026-10-05T01:31:19.224402Z 01O Running on runner-rf8f0q9qr-project-2-concurrent-0 via 2f8eed54d6df...
+2026-10-05T01:31:19.367555Z 00O section_end:1791163879:prepare_script[0K
+2026-10-05T01:31:19.367948Z 00O+section_start:1791163879:get_sources[0K
+2026-10-05T01:31:19.367954Z 00O+[0K[36;1mGetting source from Git repository[0;m[0;m
+2026-10-05T01:31:19.545702Z 01O [32;1mGitaly correlation ID: 01M44TZHEEJ9XWHRQV2WTGMJ36[0;m
+2026-10-05T01:31:19.550943Z 01O [32;1mFetching changes with git depth set to 20...[0;m
+2026-10-05T01:31:19.553026Z 01O Reinitialized existing Git repository in /builds/devopsrabota2/student-planner/.git/
+2026-10-05T01:31:19.554898Z 01O [32;1mCreated fresh repository.[0;m
+2026-10-05T01:31:19.795577Z 01O [32;1mChecking out 7cf00e2b as detached HEAD (ref is main)...[0;m
+2026-10-05T01:31:19.798870Z 01O Removing __pycache__/
+2026-10-05T01:31:19.798876Z 01O Removing dist/
+2026-10-05T01:31:19.831108Z 01O 
+2026-10-05T01:31:19.831115Z 01O [32;1mSkipping Git submodules setup[0;m
+2026-10-05T01:31:19.959802Z 00O section_end:1791163879:get_sources[0K
+2026-10-05T01:31:19.960156Z 00O+section_start:1791163879:download_artifacts[0K
+2026-10-05T01:31:19.960160Z 00O+[0K[36;1mDownloading artifacts[0;m[0;m
+2026-10-05T01:31:20.132078Z 01O [32;1mDownloading artifacts for build_job (19)...[0;m
+2026-10-05T01:31:20.226596Z 01E Downloading artifacts from coordinator... ok      [0;m  correlation_id[0;m=01M44TZMQ9ZZ75NCKXYRRVQ3SD id[0;m=19 status[0;m=200 token[0;m=eyJraWQiO
+2026-10-05T01:31:20.365051Z 00O section_end:1791163880:download_artifacts[0K
+2026-10-05T01:31:20.365231Z 00O+section_start:1791163880:step_script[0K
+2026-10-05T01:31:20.365236Z 00O+[0K[36;1mExecuting "step_script" stage of the job script[0;m[0;m
+2026-10-05T01:31:20.365242Z 00O [0KUsing effective pull policy of [always] for container python:3.12-slim[0;m
+2026-10-05T01:31:20.395503Z 00O [0KUsing docker image sha256:02108f5d322dd89f1c9e552442c25acb0543dfdbc455693a5599624f20d9155d for python:3.12-slim with digest python@sha256:02108f5d322dd89f1c9e552442c25acb0543dfdbc455693a5599624f20d9155d ...[0;m
+2026-10-05T01:31:20.628292Z 01O [32;1m$ python -m pip install --no-index -r requirements.txt[0;m
+2026-10-05T01:31:21.451558Z 01E WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+2026-10-05T01:31:21.484266Z 01O [32;1m$ python -m unittest discover -s tests -v[0;m
+2026-10-05T01:31:21.555235Z 01E test_escape (test_app.Tests.test_escape) ... ok
+2026-10-05T01:31:21.555244Z 01E test_lifecycle (test_app.Tests.test_lifecycle) ... ok
+2026-10-05T01:31:21.555254Z 01E test_validation (test_app.Tests.test_validation) ... ok
+2026-10-05T01:31:21.555256Z 01E 
+2026-10-05T01:31:21.555256Z 01E ----------------------------------------------------------------------
+2026-10-05T01:31:21.555257Z 01E Ran 3 tests in 0.000s
+2026-10-05T01:31:21.555257Z 01E 
+2026-10-05T01:31:21.555258Z 01E OK
+2026-10-05T01:31:21.561520Z 01O [32;1m$ python tools.py smoke dist/application.zip[0;m
+2026-10-05T01:31:21.667837Z 01O Application smoke: PASS
+2026-10-05T01:31:21.821546Z 00O section_end:1791163881:step_script[0K
+2026-10-05T01:31:21.822035Z 00O+section_start:1791163881:cleanup_file_variables[0K
+2026-10-05T01:31:21.822040Z 00O+[0K[36;1mCleaning up project directory and file based variables[0;m[0;m
+2026-10-05T01:31:22.119429Z 00O section_end:1791163882:cleanup_file_variables[0K
+2026-10-05T01:31:22.172421Z 00O [32;1mJob succeeded[0;m
